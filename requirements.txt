@@ -1,5 +1,0 @@
-functions-framework==3.4.0
-google-cloud-storage==2.14.0
-moviepy==1.0.3
-google-cloud-logging==3.9.0
-python-magic==0.4.27
