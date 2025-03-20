@@ -2,7 +2,7 @@ import os
 import tempfile
 
 from google.cloud import storage
-from moviepy.editor import VideoFileClip
+from moviepy import VideoFileClip
 
 # GCSバケット情報
 INPUT_BUCKET = "im-naoto-test-bucket"
