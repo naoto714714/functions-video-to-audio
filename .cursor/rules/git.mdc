@@ -45,13 +45,8 @@ alwaysApply: true
    # 関連ファイルのみをステージング
    git add <files>
 
-   # コミットメッセージの作成（HEREDOCを使用）
-   git commit -m "$(cat <<'EOF'
-   Prefix: <変更概要>
-
-   - <「なぜ」に焦点を当てて内容や変更理由を記述>
-   EOF
-   )"
+   # コミットメッセージの作成
+   git commit -m "Prefix: <変更概要>"
    ```
 
 ### プルリクエストの作成
@@ -79,29 +74,22 @@ alwaysApply: true
    - 機密情報の有無確認
 
 3. プルリクエストの作成
+   - あなたは複数行のコマンドが実行できないので、プルリクエストの説明文を `pr-description.md` に書き出す
+   - その後、以下の手順でプルリクエストを作成する
+
    ```bash
    # リモートへプッシュ
    git push -u origin <ブランチ名>
 
-   # プルリクエストの作成（HEREDOCを使用）
-   gh pr create --title "[Prefix]<タイトル>" --body "$(cat <<'EOF'
-   ### 概要
-   -
-
-   ### 変更内容
-   -
-
-   ### レビューのポイント
-   -
-   EOF
-   )"
+   # プルリクエストの作成
+   gh pr create --title "[Prefix]<タイトル>" --body-file pr-description.md
    ```
 
 ### 命名規則
 1. Prefixを付ける箇所
-ブランチ名: `Prefix/<ブランチ名>`
-コミットメッセージの1行目: `Prefix: <変更概要>`
-プルリクエストのタイトル: `[Prefix]<タイトル>`
+   - ブランチ名: `Prefix/<ブランチ名>`
+   - コミットメッセージ: `Prefix: <変更概要>`
+   - プルリクエストのタイトル: `[Prefix]<タイトル>`
 
 2. Prefix一覧
    |Prefix|用途|
