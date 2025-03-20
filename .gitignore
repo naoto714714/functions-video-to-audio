@@ -1,0 +1,49 @@
+# PR説明ファイル
+pr-description.md
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# 仮想環境
+venv/
+ENV/
+env/
+
+# ローカル開発環境ファイル
+.env
+.env.local
+
+# OS特有のファイル
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# エディタ/IDE特有のファイル
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
