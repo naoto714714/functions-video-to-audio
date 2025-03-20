@@ -1,0 +1,28 @@
+---
+description: システムの要件定義書。このファイルを逐一確認し、要件に沿った開発をしてください。
+globs: 
+alwaysApply: true
+---
+## システム要件定義書
+
+### 1. システム概要
+- Cloud Run関数で動作するシステムを作る
+- 動画ファイルを音声ファイルに変換する
+- `gs://im-naoto-test-bucket/inputs` に動画ファイルがアップロードされたのを検知
+- `gs://im-naoto-test-bucket/outputs` に音声ファイルに変換したファイルを保存する
+-  `gs://im-naoto-test-bucket/inputs` に動画ファイルは削除する
+
+- **システム名**：`functions-video-to-audio`
+- **使用言語**：Python 3.12
+- **Gitリポジトリ**：git@github.com:naoto714714/functions-video-to-audio.git
+
+## 2. ディレクトリ構成図
+
+このプロジェクトのディレクトリ図です。
+
+```
+note_ai_crawler/
+├── main.py
+├── requirements.txt
+├── README.md
+```
