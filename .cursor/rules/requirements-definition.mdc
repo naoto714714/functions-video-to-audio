@@ -20,10 +20,11 @@ alwaysApply: true
 このプロジェクトのディレクトリ図です。
 
 ```
-note_ai_crawler/
+functions-video-to-audio/
+├── .gitignore  # `pr-description.md`を無視するように設定
 ├── main.py
 ├── requirements.txt
-├── README.md
+└── README.md
 ```
 
 ## 注意事項
