@@ -23,6 +23,7 @@ alwaysApply: true
 functions-video-to-audio/
 ├── .gitignore  # `pr-description.md`を無視するように設定
 ├── main.py
+├── Dockerfile
 ├── requirements.txt
 └── README.md
 ```
